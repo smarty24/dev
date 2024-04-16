@@ -1,9 +1,17 @@
-
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 
+  namespace: app1
+spec:
+  project: default
+  source:
+    directory:
+      include: 'dev1/app1/*'
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
   creationTimestamp: null
   labels:
     app: app1
