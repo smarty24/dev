@@ -1,33 +1,25 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: 
-  namespace: app1
-spec:
-  project: default
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: app1
-  name: app1
+    app: apache2
+  name: apache2
   namespace: app1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app1
+      app: apache2
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: app1
+        app: apache2
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - image: httpd
+        name: httpd
         resources: {}
 status: {}
