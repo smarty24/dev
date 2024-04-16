@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/smarty24/dev
     targetRevision: HEAD
-    path: app1
+    path: dev1/app1
   destination:
     server: https://kubernetes.default.svc
     namespace: app1
