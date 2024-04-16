@@ -5,9 +5,6 @@ metadata:
   namespace: app1
 spec:
   project: default
-  source:
-    directory:
-      include: 'dev1/app1/*'
 ---
 apiVersion: apps/v1
 kind: Deployment
