@@ -19,7 +19,7 @@ spec:
         app: app1
     spec:
       containers:
-      - image: nginx
+      - image: httpd
         name: httpd
         resources: {}
 status: {}
