@@ -3,7 +3,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: app1
+    app: app1-svc
     argocd.argoproj.io/instance: app1
   name: app1-svc
   namespace: app1
@@ -13,6 +13,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: app1
+    app: app1-svc
 status:
   loadBalancer: {}
