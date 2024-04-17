@@ -6,7 +6,7 @@
   spec:
     ingressClassName: nginx
     rules:
-      - host: example.com
+      - host: app1.com
         http:
           paths:
             - pathType: Prefix
@@ -15,7 +15,7 @@
                   name: app1-svc
                   port:
                     number: 80
-              path: /apache
+              path: /
     # This section is only required if TLS is to be enabled for the Ingress
     #tls:
     #  - hosts:
