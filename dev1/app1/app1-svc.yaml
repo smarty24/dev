@@ -4,15 +4,15 @@ metadata:
   creationTimestamp: null
   labels:
     app: app1
-    argocd.argoproj.io/instance: app2
-  name: app2-svc
-  namespace: app2
+    argocd.argoproj.io/instance: app1
+  name: app1-svc
+  namespace: app1
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: app2
+    app: app1
 status:
   loadBalancer: {}
