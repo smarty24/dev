@@ -11,3 +11,7 @@ spec:
     path: dev1/app1
   destination:
     server: https://kubernetes.default.svc
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
