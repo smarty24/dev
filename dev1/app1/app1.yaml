@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: apache2
-  name: apache2
+    app: app1
+  name: app1
   namespace: app1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apache2
+      app: app1
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: apache2
+        app: app1
     spec:
       containers:
       - image: nginx

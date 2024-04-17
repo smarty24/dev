@@ -13,6 +13,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: app1-svc
+    app: app1
 status:
   loadBalancer: {}
